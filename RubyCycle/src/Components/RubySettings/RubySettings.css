@@ -1,0 +1,67 @@
+.settings-form {
+  background-color: #fff0f6;
+  border: 2px solid #b8448f;
+  border-radius: 12px;
+  padding: 25px 35px;
+  max-width: 400px;
+  margin: 40px auto;
+  box-shadow: 0 6px 14px rgba(184, 68, 143, 0.3);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #5a2a5b;
+}
+
+.settings-form h2 {
+  text-align: center;
+  color: #9f3a7a;
+  margin-bottom: 22px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.settings-form label {
+  display: block;
+  margin-bottom: 12px;
+  color: #7a3d73;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.settings-form input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-top: 6px;
+  border: 1.5px solid #c88abc;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #6e3f80;
+  background-color: #fff7fb;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.settings-form input:focus {
+  outline: none;
+  border-color: #b8448f;
+  background-color: #fff0f6;
+}
+
+.settings-form button {
+  display: block;
+  width: 100%;
+  padding: 14px 0;
+  margin-top: 25px;
+  background-color: #b8448f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.settings-form button:hover {
+  background-color: #8f3673;
+}

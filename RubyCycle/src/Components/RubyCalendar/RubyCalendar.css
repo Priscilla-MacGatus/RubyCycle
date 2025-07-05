@@ -1,0 +1,240 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Arial", sans-serif;
+}
+
+.app {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #f8f0f6;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #6a2c7a;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #e91e63;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #9b4d96;
+}
+
+
+.react-calendar {
+  background-color: #aabebd;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 20px;
+  box-sizing: border-box;
+}
+
+.react-calendar__tile {
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.react-calendar__month-view__days {
+  display: grid !important;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  padding: 10px 0;
+}
+
+.react-calendar__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.react-calendar__navigation button {
+  background-color: #f8f0f6;
+  border: 1px solid #d4d4d4;
+  color: #6a2c7a;
+  font-weight: bold;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.react-calendar__navigation button:hover {
+  background-color: #e91e63;
+  color: white;
+}
+
+.react-calendar__navigation__label {
+  font-size: 1rem;
+}
+
+.react-calendar__month-view__weekdays {
+  font-size: 0.85rem;
+}
+
+
+.period {
+  background-color: rgba(235, 150, 129, 0.4);
+  color: white;
+  font-weight: bold;
+}
+
+.ovulation {
+  background-color: rgba(168, 61, 97, 0.4);
+  color: white;
+  font-weight: bold;
+}
+
+.fertile {
+  background-color: rgba(134, 115, 118, 0.4);
+  color: white;
+}
+
+.luteal {
+  background-color: rgba(213, 139, 226, 0.4);
+  color: white;
+}
+
+.react-calendar__tile:hover {
+  background-color: #e91e63;
+  color: white;
+}
+
+
+.legend {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.legend > div {
+  padding: 5px 10px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  min-width: 80px;
+  font-size: 0.85rem;
+}
+
+.legend > div::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.legend .period::before {
+  background-color: rgba(235, 150, 129, 0.7);
+}
+
+.legend .ovulation::before {
+  background-color: rgba(168, 61, 97, 0.7);
+}
+
+.legend .fertile::before {
+  background-color: rgba(134, 115, 118, 0.7);
+}
+
+.legend .luteal::before {
+  background-color: rgba(213, 139, 226, 0.7);
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  .react-calendar {
+    padding: 15px;
+  }
+
+  .react-calendar__tile {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .react-calendar__navigation button {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+  }
+
+  .react-calendar__month-view__weekdays {
+    font-size: 0.75rem;
+  }
+
+  .react-calendar__navigation__label {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .react-calendar {
+    padding: 10px;
+  }
+
+  .react-calendar__tile {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .react-calendar__navigation button {
+    font-size: 0.75rem;
+    padding: 4px 6px;
+  }
+
+  .react-calendar__month-view__weekdays {
+    font-size: 0.7rem;
+  }
+
+  .legend > div {
+    font-size: 0.75rem;
+    min-width: auto;
+    padding: 4px 6px;
+  }
+
+  .legend > div::before {
+    width: 12px;
+    height: 12px;
+  }
+}
